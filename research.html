@@ -1,30 +1,75 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-Hant">
 <head>
     <meta charset="UTF-8">
-    <title>研究成果 - 我的名字</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research - Hsuan-Hua Huang</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        header { border-bottom: 1px solid #eee; margin-bottom: 30px; padding-bottom: 20px; }
+        nav a { text-decoration: none; color: #007bff; margin-right: 15px; }
+        
+        h2 { color: #2c3e50; border-left: 4px solid #007bff; padding-left: 15px; margin-top: 40px; }
+        
+        /* 論文列表樣式 */
+        .pub-item { margin-bottom: 25px; }
+        .pub-title { font-weight: bold; font-size: 1.1rem; color: #1a1a1a; }
+        .pub-venue { font-style: italic; color: #555; }
+        
+        /* 摘要摺疊框樣式 */
+        details {
+            background: #f8f9fa;
+            padding: 10px 15px;
+            border-radius: 5px;
+            margin-top: 10px;
+            font-size: 0.95rem;
+        }
+        summary {
+            cursor: pointer;
+            color: #007bff;
+            font-weight: 500;
+            outline: none;
+        }
+        summary:hover { text-decoration: underline; }
+    </style>
 </head>
 <body>
-    <h1>研究成果 (Research)</h1>
-    <nav>
-        <a href="index.html">首頁</a> | 
-        <a href="research.html">研究作品</a>
-    </nav>
-    <hr>
 
-    <h3>期刊論文 (Publications)</h3>
-    <ul>
-        <li>
-            <strong>論文題目：如何利用 AI 輔助學術研究</strong><br>
-            <em>2024, 某某學術期刊</em><br>
+    <header>
+        <h1>Hsuan-Hua Huang (黃宣樺)</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="research.html">Research</a>
+            <a href="#">CV</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>期刊論文 (Peer-reviewed Publications)</h2>
+        
+        <div class="pub-item">
+            <div class="pub-title">這裡輸入你的論文標題 (Paper Title)</div>
+            <div class="pub-author">Hsuan-Hua Huang, Co-author A, and Co-author B.</div>
+            <div class="pub-venue">Journal of Example Research, 2024.</div>
             <details>
-                <summary>[點擊查看摘要 Abstract]</summary>
-                <p>這是一篇關於技術與社會研究的文章摘要內容...</p>
+                <summary>Abstract (摘要)</summary>
+                <p>這裡填入你的研究摘要內容。使用 details 標籤可以讓頁面保持整潔，讀者想看時再點開即可。</p>
             </details>
-        </li>
-    </ul>
+        </div>
 
-    <h3>進行中的研究 (Working Papers)</h3>
-    <p>暫無內容。</p>
+        <h2>進行中的研究 (Working Papers)</h2>
+        <div class="pub-item">
+            <div class="pub-title">正在進行中的研究標題...</div>
+            <p>相關進度與描述。</p>
+        </div>
+    </main>
+
 </body>
 </html>
